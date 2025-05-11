@@ -1,32 +1,32 @@
 # AdversterX Frontend Test
 
-Це тестове завдання на позицію **Front-end Developer** у компанію **AdversterX**.
+This is a test assignment for the **Front-end Developer** position at **AdversterX**.
 
 ---
 
-## 🧩 Функціонал
+## 🧩 Features
 
-- Отримання користувачів з API: [jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
-- Відображення у вигляді адаптивних карток
-- Фільтрація за імʼям, email, містом, компанією
-- Сортування за імʼям / містом
-- Кнопка "Очистити фільтр"
-- Реалізовано через **ОOП (класи)** в TypeScript
-- Адаптивна верстка, підтримка мобільних пристроїв
-- Плавна анімація при появі елементів
+- Fetches users from the API: [jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
+- Displays users as responsive cards
+- Filtering by name, email, city, and company
+- Sorting by name or city
+- "Clear" filter button
+- Built with **OOP (class-based)** architecture in TypeScript
+- Fully responsive layout for mobile and desktop
+- Smooth fade-in animation for user cards
 
 ---
 
-## ⚙️ Технології
+## ⚙️ Technologies
 
 - [Next.js 14+ (App Router)](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/) (використано `@import 'tailwindcss'`)
-- Без `any`, повна типізація
+- [Tailwind CSS](https://tailwindcss.com/) (`@import 'tailwindcss'` syntax used)
+- Fully typed, without use of `any`
 
 ---
 
-## 🚀 Запуск локально
+## 🚀 Local Setup
 
 ```bash
 git clone https://github.com/Rinya7/adversterx-users-app.git
