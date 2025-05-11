@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { User, UserData } from "../models/User";
-import UserList from "./UserList";
-import SearchFilter from "./SearchFilter";
-import SortSelector, { SortOption } from "./SortSelector";
+import { User, UserData } from "@/models/User";
+import UserList from "@/components/UserList";
+import SearchFilter from "@/components/SearchFilter";
+import SortSelector, { SortOption } from "@/components/SortSelector";
 
 interface Props {
   usersData: UserData[];

@@ -4,6 +4,10 @@ This is a test assignment for the **Front-end Developer** position at **Adverste
 
 ---
 
+## 📸 Preview
+
+<img src="./public/screenshot.png" alt="Screenshot" width="800"/>
+
 ## 🧩 Features
 
 - Fetches users from the API: [jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)

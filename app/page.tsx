@@ -1,5 +1,5 @@
-import { UserData } from "../models/User";
-import UserExplorer from "../components/UserExplorer";
+import { UserData } from "@/models/User";
+import UserExplorer from "@/components/UserExplorer";
 
 export default async function HomePage() {
   const res = await fetch("https://jsonplaceholder.typicode.com/users", {

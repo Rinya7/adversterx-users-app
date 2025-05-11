@@ -1,7 +1,7 @@
 // components/UserList.tsx
 import React from "react";
-import { User } from "../models/User";
-import UserCard from "./UserCard";
+import { User } from "@/models/User";
+import UserCard from "@/components/UserCard";
 
 interface Props {
   users: User[];

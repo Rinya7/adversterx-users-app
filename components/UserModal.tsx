@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { User } from "../models/User";
+import { User } from "@/models/User";
 
 interface Props {
   user: User;

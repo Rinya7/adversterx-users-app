@@ -1,15 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import { User } from "../models/User";
-import UserModal from "./UserModal";
+import { User } from "@/models/User";
+import UserModal from "@/components/UserModal";
 
 interface Props {
   user: User;
 }
 
 const UserCard: React.FC<Props> = ({ user }) => {
-  const [open, setOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
