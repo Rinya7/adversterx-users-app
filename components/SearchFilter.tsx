@@ -23,7 +23,7 @@ const SearchFilter: React.FC<Props> = ({ value, onChange, onReset }) => {
       <input
         ref={inputRef}
         type="text"
-        placeholder="Пошук за ім’ям, email, містом або компанією..."
+        placeholder="Search by name, email, city or company..."
         value={value}
         onChange={(e) => onChange(e.target.value)}
         className="w-full max-w-md p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -33,7 +33,7 @@ const SearchFilter: React.FC<Props> = ({ value, onChange, onReset }) => {
           onClick={handleReset}
           className="px-3 py-2 text-sm rounded-md  shadow-sm bg-background  border-1 hover:bg-gray-700"
         >
-          Очистити
+          Clear
         </button>
       )}
     </div>

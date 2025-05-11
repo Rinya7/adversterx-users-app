@@ -6,12 +6,12 @@ export default async function HomePage() {
     next: { revalidate: 60 },
   });
 
-  const data: UserData[] = await res.json(); // <-- RAW DATA
+  const data: UserData[] = await res.json();
 
   return (
     <main className="max-w-5xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-4">Користувачі</h1>
-      <UserExplorer usersData={data} /> {/* передаємо чисті об'єкти */}
+      <h1 className="text-3xl font-bold mb-4">Users</h1>
+      <UserExplorer usersData={data} />
     </main>
   );
 }

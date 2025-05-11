@@ -14,7 +14,7 @@ const SortSelector: React.FC<Props> = ({ selected, onChange }) => {
   return (
     <div className="mb-6">
       <label className="mr-2 text-sm font-medium text-gray-700  ">
-        Сортувати за:
+        Sort by:
       </label>
       <select
         value={selected}
@@ -22,9 +22,9 @@ const SortSelector: React.FC<Props> = ({ selected, onChange }) => {
         className="border border-gray-300 rounded-md p-2 text-sm bg-background "
       >
         <option value="name" className="hover:bg-gray-700">
-          Ім’я
+          Name
         </option>
-        <option value="city">Місто</option>
+        <option value="city">City</option>
       </select>
     </div>
   );

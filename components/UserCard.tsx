@@ -16,13 +16,13 @@ const UserCard: React.FC<Props> = ({ user }) => {
 
       <div className="text-sm text-gray-700 space-y-1">
         <p>
-          <strong>Телефон:</strong> {user.phone}
+          <strong>Phone:</strong> {user.phone}
         </p>
         <p>
-          <strong>Місто:</strong> {user.address.city}
+          <strong>City:</strong> {user.address.city}
         </p>
         <p>
-          <strong>Компанія:</strong> {user.company.name}
+          <strong>Company:</strong> {user.company.name}
         </p>
         <a
           href={`http://${user.website}`}
