@@ -1,0 +1,33 @@
+// components/UserExplorer.tsx
+"use client";
+
+import { useState } from "react";
+import { User } from "../models/User";
+import UserList from "./UserList";
+import SearchFilter from "./SearchFilter";
+import SortSelector, { SortOption } from "./SortSelector";
+
+interface Props {
+  users: User[];
+}
+
+export default function UserExplorer({ users }: Props) {
+  const [query, setQuery] = useState("");
+  const [sortBy, setSortBy] = useState<SortOption>("name");
+
+  const filtered = users
+    .filter((user) => user.matches(query))
+    .sort((a, b) =>
+      sortBy === "name"
+        ? a.name.localeCompare(b.name)
+        : a.address.city.localeCompare(b.address.city)
+    );
+
+  return (
+    <div>
+      <SearchFilter value={query} onChange={setQuery} />
+      <SortSelector selected={sortBy} onChange={setSortBy} />
+      <UserList users={filtered} />
+    </div>
+  );
+}
