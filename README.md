@@ -38,3 +38,11 @@ cd adversterx-users-app
 npm install
 npm run dev
 ```
+
+---
+
+## 👤 Author
+
+Developed by **Rinya7**  
+📧 Email: [itv.dmitriiev0712@email.com](mailto:itv.dmitriiev0712@email.com)  
+🔗 GitHub: [github.com/Rinya7](https://github.com/Rinya7)
