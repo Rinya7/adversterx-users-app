@@ -1,19 +1,20 @@
-// components/UserExplorer.tsx
 "use client";
 
-import { useState } from "react";
-import { User } from "../models/User";
+import { useState, useMemo } from "react";
+import { User, UserData } from "../models/User";
 import UserList from "./UserList";
 import SearchFilter from "./SearchFilter";
 import SortSelector, { SortOption } from "./SortSelector";
 
 interface Props {
-  users: User[];
+  usersData: UserData[];
 }
 
-export default function UserExplorer({ users }: Props) {
+export default function UserExplorer({ usersData }: Props) {
   const [query, setQuery] = useState("");
   const [sortBy, setSortBy] = useState<SortOption>("name");
+
+  const users = useMemo(() => usersData.map((d) => new User(d)), [usersData]);
 
   const filtered = users
     .filter((user) => user.matches(query))
