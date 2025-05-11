@@ -8,7 +8,7 @@ interface Props {
 
 const UserCard: React.FC<Props> = ({ user }) => {
   return (
-    <div className="flex flex-col justify-between rounded-xl border border-gray-200 p-4 shadow-sm bg-white hover:shadow-md transition-shadow duration-300">
+    <div className="flex flex-col justify-between rounded-xl border border-gray-200 p-4 shadow-sm bg-white hover:shadow-md transition-shadow duration-300 animate-fadeIn">
       <div className="mb-4">
         <h2 className="text-lg font-semibold text-gray-800">{user.name}</h2>
         <p className="text-sm text-gray-500">{user.email}</p>
